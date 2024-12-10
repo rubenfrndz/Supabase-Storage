@@ -8,7 +8,7 @@ import { supabase } from '@core/supabase/client';
 
 const FileUploader = () => {
   const [files, setFiles] = useState<string[]>([]);
-  const BASE_STORAGE_URL = process.env.EXPO_PUBLIC_BASE_BUCKET_URL;
+  const BASE_STORAGE_URL = 'https://gkrcnndkjkqhzxpwszsd.supabase.co/storage/v1/object/public/uploads';
 
   // Fetch files from Supabase storage
   const fetchFiles = async () => {
